@@ -130,7 +130,7 @@ def graph_search(problem, fringe):
     while fringe:
         node = fringe.pop()
         if problem.goal_test(node.state):
-            print(contador)
+            print " ---> Numero de nodos expandidos:", contador
             return node
         if node.state not in closed:
             closed[node.state] = True
